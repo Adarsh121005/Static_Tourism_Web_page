@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    
+    <title>car booking</title>
+    <style>body{background-image: url(car2.jpg);}
+        h1{
+            color:red;
+        }
+        div{
+     border:solid;
+   
+    color:yellow;
+    padding-left: 25%;
+    padding-top: 1%;
+            padding-bottom:0%;
+    font-size:px;
+    text-align: center;
+        }
+        html{
+            zoom:500%;
+        }table{background-color:black;
+        padding:0px 100px;
+        border-radius:10%;}
+    </style>
+     <script>
+    function validateForm() {
+    var a = document.forms["car"]["name"].value;
+    var b = document.forms["car"]["mobile"].value;
+    var c = document.forms["car"]["number_of_passengers"].value;
+    var d = document.forms["car"]["email"].value;
+    var e = document.forms["car"]["date"].value;
+    var f = document.forms["car"]["pickup_place"].value;
+    var g = document.forms["car"]["destination"].value;
+    var h = document.forms["car"]["time"].value;
+    if (a == ""||b == ""||c == ""||d == ""||e == ""||f == ""||g==""||h=="") 
+    {
+        window.alert("Please give the complete & correct information to make your booking");
+        return false;
+    }
+    else{
+        var x=confirm("Are you sure to submit");
+if(x==true)
+{window.alert("Thank you. You will receive a confirmation email with your booking id & total amount to be paid.");
+    }
+}
+}
+    
+    </script>
+</head>
+    
+<body>
+   
+    <div><form name="car" onsubmit="validateForm()" method="get" action=""><table><tr><td colspan="2"><h1 style="color:red;text-align: center;">Car Booking</h1></td></tr><tr><td><label for="fn"><strong>Full name:</strong></label></td><td><input type="text" name="name" id="fn"></td></tr><tr><td><label for="mn"><strong>Mobile no:</strong></label></td><td><input type="tel" name="mobile" id="mn"></td></tr><tr><td><label for="n"><strong>Number of passengers:</strong></label></td><td><input type="tel" name="number_of_passengers" id="n"></td></tr><tr><td><label for="email"><strong>Email:</strong></label></td><td><input type="email" name="email" id="email"></td></tr>
+    <tr><td><label for="date"><strong>Date of Journey:</strong></label></td><td><input type="date" name="date" id="date"></td></tr> <tr><td><label for="from"><strong>Pick-up place:</strong></label></td><td><input type="text" name="pickup_place" id="from"></td></tr>
+        <tr><td><label for="to"><strong>Destinstion:</strong></label></td><td><input type="text" name="destination" id="to"></td></tr>
+<tr><td><label for="time"><strong>Pick-up time:</strong></label></td><td><input type="time" name="time" id="time"></td></tr> 
+        <tr><td colspan="2"><fieldset><legend><strong>In which car you want to travel</strong></legend><input type="radio"name="car" value="Ac" checked="checked">Ac<br><input type="radio"name="car" value="non ac">Non-Ac</fieldset></td></tr>
+        <tr><td colspan="2"><fieldset><legend>Extras</legend><label><input type="checkbox" name="extras" value="baby">baby seat </label><br><label><input type="checkbox" name="extras" value="wheelchair">wheelchair Access</label><br><label><input type="checkbox" name="extras" value="tip">stock tip </label></fieldset></td></tr><tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+    </table></form></div>
+</body>
+</html>

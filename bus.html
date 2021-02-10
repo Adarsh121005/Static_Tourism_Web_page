@@ -1,0 +1,54 @@
+<!doctype html>
+<html id="zoom">
+<head>
+    
+    <title>Bus</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+div {
+    border:solid;
+    color:green;
+    padding-left:29%;
+    text-align: center;
+        }
+html {
+    zoom:641%;
+}
+    </style>
+    <script>
+    function validateForm() {
+    var a = document.forms["bus"]["name"].value;
+     var b = document.forms["bus"]["mobile"].value;
+     var c = document.forms["bus"]["number_of_passengers"].value;
+     var d = document.forms["bus"]["email"].value;
+    var e = document.forms["bus"]["date"].value;
+    var f = document.forms["bus"]["from"].value;
+    var g = document.forms["bus"]["to"].value;
+    var h = document.forms["bus"]["time"].value;
+    if (a == ""||b == ""||c == ""||d == ""||e == ""||f == ""||g==""||h=="") 
+    {
+        window.alert("Please give the complete & correct information to make your booking");
+        return false;
+    }
+    else{
+        var x=confirm("Are you sure to submit");
+if(x==true)
+{window.alert("Thank you. You will receive a confirmation email with your booking id & total amount to be paid.");
+    }
+}
+}
+    
+    </script>
+</head>
+    
+<body>
+   
+   <div><form name="bus" action="" onsubmit="return validateForm()" method="get"><table><tr><td colspan="2"><h1 style="color:red;text-align: center;">Bus Booking</h1></td></tr><tr><td><label for="fn"><strong>Full name:</strong></label></td><td><input type="text" name="name" id="fn"></td></tr><tr><td><label for="mn"><strong>Mobile no:</strong></label></td><td><input type="tel" name="mobile" id="mn" ></td></tr><tr><td><label for="n"><strong>Number of passengers:</strong></label></td><td><input type="tel" name="number_of_passengers" id="n" ></td></tr><tr><td><label for="email"><strong>Email:</strong></label></td><td><input type="email" name="email" id="email"></td></tr>
+    <tr><td><label for="date"><strong>Date of Journey:</strong></label></td><td><input type="date" name="date" id="date" ></td></tr> <tr><td><label for="from"><strong>From:</strong></label></td><td><input type="text" name="from" id="from" ></td></tr>
+        <tr><td><label for="to"><strong>To:</strong></label></td><td><input type="text" name="to" id="to"></td></tr>
+<tr><td><label for="time"><strong>Time:</strong></label></td><td><input type="time" name="time" id="time" ></td></tr> 
+       <tr><td colspan="2"><fieldset><legend><strong>In which Bus you want to travel</strong></legend><input type="radio"name="car" value="Ac" checked="checked">Ac<br><input type="radio"name="car" value="non ac">Non-Ac</fieldset></td></tr><tr><td colspan="2"><input type="submit" value="Submit"></td></tr></table></form></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    
+    <title>Contact us</title>
+    <style>
+    html{
+        zoom:800%;
+        }
+        body{
+            background-color: skyblue;
+        } #home{
+            text-decoration: none;
+            margin:10px;
+            color:red;
+            background-color:black;
+            padding: 4px;
+            border-radius: 5px;
+        } #home:hover{
+            background-color: yellow;
+            color: black;
+            font-size:20px;
+            border-radius: 50px;
+        }
+        div{
+            margin:10px;
+        }
+        #
+    </style>
+</head>
+
+<body>
+    <div>
+<a href="Home.html" target="_self" id="home">Home</a></div>
+    <form action="mailto:travelwebsite@gmail.com" method="post">
+    <fieldset><legend>Queries</legend>
+        <table border="0">
+            <tr><td>
+                <label for="username">Username:</label></td><td>
+        <input type="text" name="username" id="username"></td></tr>
+            <tr>    <td>
+        <label for="email">Email:</label></td><td>
+            <input type="email" name="Email" id="email">
+          </td></tr><tr><td><label for="choose">Issue regarding:</label></td>
+            <td><select name="issue" id="choose" required><option value="Booking">Booking</option><option value="Booking">Payment</option><option value="Booking">Tour packages</option><option value="Booking">Other</option></select></td></tr>
+          <tr>
+            <td colspan="2">
+        <label for="issue">Issue:</label> 
+              </td></tr><tr>
+        <td colspan="2"> <textarea action="mailto:travelwebsite@gmail.com" method="post" id="issue" cols="30" rows="5"></textarea></td>
+            </tr><tr>
+        <td colspan="2"><input type=submit value="Email us"></td></tr></table>
+    </fieldset>
+        </form>
+</body>
+</html>

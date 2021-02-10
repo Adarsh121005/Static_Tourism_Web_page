@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Train booking</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+div {
+    border:solid 2px red;
+    padding-top: 1%;
+    padding-left:28%;
+    text-align: center;
+        }
+table{
+            text-align: center;
+        border-radius: 8%;
+    }
+
+html {
+    zoom:665%;
+}  
+    </style>
+    <script>
+    
+     function validateForm() {
+    var a = document.forms["train"]["name"].value;
+    var b = document.forms["train"]["mobile"].value;
+    var c = document.forms["train"]["number_of_passengers"].value;
+    var d = document.forms["train"]["email"].value;
+    var e = document.forms["train"]["date"].value;
+    var f = document.forms["train"]["from"].value;
+    var g = document.forms["train"]["to"].value;
+    if (a == ""||b == ""||c == ""||d == ""||e == ""||f == ""||g=="") 
+    {
+        window.alert("Please fill all fields to make your booking succesful");
+        return false;
+    }
+    else{
+        var x=confirm("Are you sure to submit");
+if(x==true)
+{window.alert("Thank you. You will receive a link within a confirmation email. Clicking on that link you can further proceed to see the trains available & payment options.");
+    }
+}
+     }
+    </script>
+</head>
+<body>
+    
+     <div><form name="train" action="" onsubmit="return validateForm()" method="get"><table><tr><td colspan="2"><h1 style="color:blue;text-align: center;">Train Booking</h1></td></tr><tr><td><label for="fn"><strong>Full name:</strong></label></td><td><input type="text" name="name" id="fn"></td></tr><tr><td><label for="mn"><strong>Mobile no:</strong></label></td><td><input type="tel" name="mobile" id="mn"></td></tr><tr><td><label for="n"><strong>Number of passengers:</strong></label></td><td><input type="tel" name="number_of_passengers" id="n"></td></tr><tr><td><label for="email"><strong>Email:</strong></label></td><td><input type="email" name="email" id="email"></td></tr>
+    <tr><td><label for="date"><strong>Date of Journey:</strong></label></td><td><input type="date" name="date" id="date" ></td></tr> <tr><td><label for="from"><strong>From:</strong></label></td><td><input type="text" name="from" id="from" ></td></tr>
+        <tr><td><label for="to"><strong>To:</strong></label></td><td><input type="text" name="to" id="to" ></td></tr> 
+       <tr><td colspan="2"><fieldset><legend><strong>Select which is comfortable for you</strong></legend><input type="radio"name="class" value="General" checked="checked">General<br><input type="radio"name="class" value="sleeper">Sleeper<br><input type="radio"name="class" value="Ac">Ac</fieldset></td></tr><tr><td colspan="2"><input type="submit" value="Submit"></td></tr></table></form></div>
+    
+    
+    
+</body>
+</html>

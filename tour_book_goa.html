@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    
+    <title>Booking</title>
+    <style>
+        h1{
+            color: red;
+        }
+
+        body{
+            background-image: url(goa.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        fieldset{
+            background-color: white;
+        }
+        table{
+            color: yellow;
+        }
+        div{
+     border:solid;
+
+   
+    color:black;
+    padding-left: 25%;
+    padding-top: 1%;
+    padding-bottom:0%;
+    font-size:px;
+    text-align: center;
+        }
+        html{
+            zoom:500%;
+        }table{
+        padding:0px 100px;
+        border-radius:10%;}
+    </style>
+     <script>
+    function validateForm() {
+    var a = document.forms["book"]["name"].value;
+    var b = document.forms["book"]["mobile"].value;
+    var c = document.forms["book"]["number_of_passengers"].value;
+    var d = document.forms["book"]["email"].value;
+    var e = document.forms["book"]["date"].value;
+    var f = document.forms["book"]["pickup_place"].value;
+    if (a == ""||b == ""||c == ""||d == ""||e == ""||f == "") 
+    {
+        window.alert("Please give the complete & correct information to make your booking");
+        return false;
+    }
+    else{
+        var x=confirm("Are you sure to submit");
+if(x==true)
+{window.alert("Thank you. You will receive a confirmation email with your booking id & total amount to be paid.");
+    }
+}
+}
+    
+    </script>
+</head>
+    
+<body>
+   
+    <div><form name="book" onsubmit="validateForm()" method="get" action=""><table><tr><td colspan="2"><h1 style="color:red;text-align: center;">Booking</h1></td></tr><tr><td><label for="fn"><strong>Full name:</strong></label></td><td><input type="text" name="name" id="fn"></td></tr><tr><td><label for="mn"><strong>Mobile no:</strong></label></td><td><input type="tel" name="mobile" id="mn"></td></tr><tr><td><label for="n"><strong>Number of passengers:</strong></label></td><td><input type="tel" name="number_of_passengers" id="n"></td></tr><tr><td><label for="email"><strong>Email:</strong></label></td><td><input type="email" name="email" id="email"></td></tr>
+    <tr><td><label for="date"><strong>Date of Journey:</strong></label></td><td><input type="date" name="date" id="date"></td></tr> <tr><td><label for="from"><strong>Pick-up place:</strong></label></td><td><input type="text" name="pickup_place" id="from"></td></tr>
+        <tr></tr>
+         <tr><td colspan="2"><fieldset><legend><strong>Select the pack</strong></legend><input type="radio"name="pack" checked="checked">5500<br><input type="radio"name="pack">7599</fieldset></td></tr>
+        <tr><td colspan="2"><fieldset><legend><strong>In which car you want to travel</strong></legend><input type="radio"name="car" value="Ac" checked="checked">Ac<br><input type="radio"name="car" value="non ac">Non-Ac</fieldset></td></tr>
+        <tr><td colspan="2"><fieldset><legend>Extras</legend><label><input type="checkbox" name="extras" value="baby">baby seat </label><br><label><input type="checkbox" name="extras" value="wheelchair">wheelchair Access</label><br><label><input type="checkbox" name="extras" value="tip">stock tip </label></fieldset></td></tr><tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+    </table></form></div>
+</body>
+</html>

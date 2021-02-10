@@ -1,0 +1,31 @@
+#div1{
+    
+   
+    text-align: center;
+    margin: 0px; 
+    float:left;
+}
+#div2{
+    text-align: center;
+    margin-left:13px;
+    width:inherit;
+    float:left;
+}
+#fset1{
+    background-color: yellow;
+}
+#fset2{
+    padding:0px 60px 0px 80px;
+    background-color:white;
+}
+#login{
+    zoom:800%;
+}
+#signup{
+    zoom:520%;
+}
+#l1,#l2{
+    color:red;
+    font-size:15px;
+}
+#star{color: red;}

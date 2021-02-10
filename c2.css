@@ -1,0 +1,17 @@
+#bus{
+    margin-bottom: inherit;
+   
+}
+div {
+    border:solid;
+    background-color: Yellow;
+    color:red;
+    padding:18%;
+    padding-top: 2%;
+    font-size:px;
+    text-align: center;
+}
+
+html {
+    zoom:500%;
+}

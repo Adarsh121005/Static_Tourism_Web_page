@@ -1,0 +1,25 @@
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+man{
+    padding: 30px;
+}
+ker{
+    padding: 30px;
+}
+raj{
+    padding-left: 50px;
+    padding-bottom: 25px;
+    background-color: black;
+    width: inherit;
+}
+p{
+    font-style: italic;
+color:#00ffeb;
+text-shadow: 14px solid;
+}
+hrading{
+    color: brown;
+}

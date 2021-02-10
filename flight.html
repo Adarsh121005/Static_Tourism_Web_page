@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Plane booking</title>
+    <style>
+        body{ background-image: url(f2.jpg);}
+    div {
+    border:solid;
+    color:blue;
+        margin:0px;
+    padding:0% 28%;
+    padding-top: 0.8%;
+    font-size:px;
+    text-align: center;
+        }
+        table{color:white;
+        background-color: rgba(255, 0, 0, 0.69);
+        text-align: center;
+        border-radius: 10%;}
+html {
+    zoom:750%;
+}
+    </style>
+    <script>
+    
+     function validateForm() {
+    var a = document.forms["flight"]["name"].value;
+    var b = document.forms["flight"]["mobile"].value;
+    var c = document.forms["flight"]["number_of_passengers"].value;
+    var d = document.forms["flight"]["email"].value;
+    var e = document.forms["flight"]["date"].value;
+    var f = document.forms["flight"]["from"].value;
+    var g = document.forms["flight"]["to"].value;
+    if (a == ""||b == ""||c == ""||d == ""||e == ""||f == ""||g=="") 
+    {
+        window.alert("Please fill all fields to make your booking succesful");
+        return false;
+    }
+    else{
+        var x=confirm("Are you sure to submit");
+if(x==true)
+{window.alert("Thank you. You will receive a link within a confirmation email. Clicking on that link you can further proceed to see the trains available & payment options.");
+    }
+}
+     }
+    </script>
+</head>
+<body>
+    <div><form name="flight" method="get" action="" onsubmit="validateForm()"><table ><tr><td colspan="2"><h2 style="color:yellow;text-align: center;">Flight Booking</h2></td></tr><tr><td><label for="fn"><strong>Full name:</strong></label></td><td><input type="text" name="name" id="fn" ></td></tr><tr><td><label for="mn"><strong>Mobile no:</strong></label></td><td><input type="tel" name="mobile" id="mn" ></td></tr><tr><td><label for="n"><strong>Number of passengers:</strong></label></td><td><input type="tel" name="number_of_passengers" id="n" ></td></tr><tr><td><label for="email"><strong>Email:</strong></label></td><td><input type="email" name="email" id="email"></td></tr>
+    <tr><td><label for="date"><strong>Date of Journey:</strong></label></td><td><input type="date" name="date" id="date"></td></tr> <tr><td><label for="from"><strong>From:</strong></label></td><td><select name="from" id="from" ><option value="Delhi">Delhi</option><option value="Amritsar">Amritsar</option><option value="Vijayawada">Vijayawada</option><option value="Hyderabad">Hyderabad</option><option value="Chennai">Chennai</option><option value="Mumbai">Mumbai</option></select></td></tr> <tr><td><label for="to"><strong>To:</strong></label></td><td><select name="to" id="to" required><option value="Delhi">Delhi</option><option value="Amritsar">Amritsar</option><option value="Vijayawada">Vijayawada</option><option value="Hyderabad">Hyderabad</option><option value="Chennai">Chennai</option><option value="Mumbai">Mumbai</option></select></td></tr> <tr><td colspan="2"><fieldset><legend><strong>In which class you want to travel</strong></legend><input type="radio"name="class" value="Bussiness" checked="checked">Bussiness<br><input type="radio"name="class" value="premium">Premium<br><input type="radio"name="class" value="economy" >Economy<br></fieldset></td></tr>
+        <tr><td colspan="2"><input type="submit" value="Submit"></td></tr></table></form></div>
+</body>
+</html>
